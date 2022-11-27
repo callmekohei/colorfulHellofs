@@ -1,0 +1,40 @@
+{
+
+  "ColorScheme" : {
+      "black"      : { "Red":21  , "Green":21  , "Blue": 12  }
+    , "darkBlue"   : { "Red":0   , "Green":55  , "Blue": 218 }
+    , "darkGreen"  : { "Red":19  , "Green":161 , "Blue": 14  }
+    , "darkCyan"   : { "Red":58  , "Green":150 , "Blue": 221 }
+    , "darkRed"    : { "Red":197 , "Green":15  , "Blue": 31  }
+    , "darkMagenta": { "Red":136 , "Green":23  , "Blue": 152 }
+    , "darkYellow" : { "Red":193 , "Green":156 , "Blue": 0   }
+    , "gray"       : { "Red":204 , "Green":204 , "Blue": 204 }
+    , "darkGray"   : { "Red":86  , "Green":95  , "Blue": 137 }
+    , "blue"       : { "Red":42  , "Green":195 , "Blue": 222 }
+    , "green"      : { "Red":158 , "Green":206 , "Blue": 106 }
+    , "cyan"       : { "Red":125 , "Green":207 , "Blue": 255 }
+    , "red"        : { "Red":247 , "Green":118 , "Blue": 142 }
+    , "magenta"    : { "Red":187 , "Green":154 , "Blue": 247 }
+    , "yellow"     : { "Red":224 , "Green":175 , "Blue": 104 }
+    , "white"      : { "Red":192 , "Green":202 , "Blue": 245 }
+  }
+
+  ,
+
+  "FontParams" : {
+      "Name" : "BIZ UDゴシック"
+    , "Size" : 14
+  }
+
+  ,
+
+  "ColorParams" : {
+      "backGroundColor" : 0
+    , "foreGroundColor" : 7
+  }
+
+  ,
+
+  "ConsoleEncodingUTF8" : true
+
+}
