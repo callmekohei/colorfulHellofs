@@ -15,7 +15,7 @@ module MyConsole =
     }
 
     [<Struct; StructLayout(LayoutKind.Sequential)>]
-    type ColorScheme = {
+    type ColorTable = {
       black       : RGB
       darkBlue    : RGB
       darkGreen   : RGB
@@ -52,7 +52,7 @@ module MyConsole =
         val mutable dwMaximumWindowSize  : COORD
         val mutable wPopupAttributes     : int16
         val mutable bFullscreenSupported : bool
-        val mutable colorScheme          : ColorScheme
+        val mutable colorTable           : ColorTable
 
       [<Struct>]
       [<StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)>]
@@ -104,12 +104,12 @@ module MyConsole =
         foreGroundColor : int
       }
 
-      let updateColorScheme (colorScheme:ColorScheme) =
+      let updateColorScheme (colorTable:ColorTable) =
         let mutable screenBuffer = new CONSOLE_SCREEN_BUFFER_INFOEX(
             cbSize = Marshal.SizeOf(typeof<CONSOLE_SCREEN_BUFFER_INFOEX>)
         )
         GetConsoleScreenBufferInfoEx(GetStdHandle(STD_OUTPUT_HANDLE), &screenBuffer ) |> ignore
-        screenBuffer.colorScheme <- colorScheme
+        screenBuffer.colorTable <- colorTable
         SetConsoleScreenBufferInfoEx(GetStdHandle(STD_OUTPUT_HANDLE), &screenBuffer ) |> ignore
 
       let updateFontInfo (fontParams:FontParams) =

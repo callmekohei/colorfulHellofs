@@ -8,7 +8,7 @@ module Main =
   open MyConsole.CmdConsole.Util
 
   type JsonParams = {
-    ColorScheme         : ColorScheme
+    ColorTable          : ColorTable
     FontParams          : FontParams
     ColorParams         : ColorParams
     ConsoleEncodingUTF8 : bool
@@ -19,7 +19,7 @@ module Main =
 
     let stream = new FileStream("./cmdconsolesettings.json", FileMode.Open, FileAccess.Read)
     let cmdParams = JsonSerializer.Deserialize<JsonParams>(stream)
-    cmdParams.ColorScheme         |> updateColorScheme
+    cmdParams.ColorTable          |> updateColorScheme
     cmdParams.FontParams          |> updateFontInfo
     cmdParams.ColorParams         |> consoleColor
     cmdParams.ConsoleEncodingUTF8 |> consoleEncodingUTF8

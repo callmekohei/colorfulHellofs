@@ -1,6 +1,6 @@
 {
 
-  "ColorScheme" : {
+  "ColorTable" : {
       "black"      : { "Red":21  , "Green":21  , "Blue": 12  }
     , "darkBlue"   : { "Red":0   , "Green":55  , "Blue": 218 }
     , "darkGreen"  : { "Red":19  , "Green":161 , "Blue": 14  }
