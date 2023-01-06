@@ -123,8 +123,8 @@ module MyConsole =
 
       let consoleEncodingUTF8 (flg:bool) =
         if flg then
-          Console.InputEncoding   <- Text.UTF8Encoding.UTF8
-          Console.OutputEncoding  <- Text.UTF8Encoding.UTF8
+          Console.InputEncoding   <- Text.Encoding.Unicode
+          Console.OutputEncoding  <- Text.Encoding.Unicode
 
       let consoleColor (colorParams:ColorParams) =
         match colorParams.backGroundColor with
